@@ -1,34 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
+session_start();
 
-<body>
+$usuario_autentificado = false; //Usuário para ser verificável
+$usuario_cadastrado = [ //Dados
+    [
+    'email' => 'admin@senai.br',//Email do usuário 1
+    'senha' => 12345 //Senha de usuário
+    ],
+    [
+    'email' => 'aluno@senai.br',//Email do usuário 2
+    'senha' => 'abcde' //Senha do user 2
+    ],
+    [
+    'email' => 'suporte@senai.br',//Email  do usuário 3
+    'senha' => '1a2b3c'// senha do user 3
+    ]
+];
 
-    <?php
-    function mostrarPOST()
-    { //Função que mostra o print_r POST e, colinha para a tabela virtual do php
-        echo "<pre>";
-        print_r($_POST);
-        echo "</pre> <hr>";
+foreach ($usuario_cadastrado as $user){ //Verificação de email e senha 
+    if ($user['email'] == $_POST['email'] and $user['senha'] == $_POST['senha']){
+        $usuario_autentificado = true; //Se tiver tudo certo, essa variavel vira true 
     }
-
-    echo "<h1> Olá " . $_POST['email'] . ", seja bem vindo!!! <hr>";
-
-    mostrarPOST(); // Chamei a função da lista virtual com POST
-
-    echo "E-mail: ";
-    echo $_POST['email'];
-    echo '<br>';
-    echo "senha: ";
-    echo $_POST["senha"];
-
-    ?>
-
-</body>
-
-</html>
+}
+if ($usuario_autentificado == true){ //Se tudo estiver certo, será direcionado na página painel.php
+    $_SESSION['autenticado'] = 'SIM';
+    header('Location: painel.php'); //Direciona a localização tal
+}
+else{
+    //echo "Óh não, senha ou usuários estão errados"; // Se não, print isso
+    $_SESSION['autenticado'] = 'NÃO';
+    header('Location: index.php?login=erro');//Caso o user erre algo, será direcionado nesse página
+}
+?>
