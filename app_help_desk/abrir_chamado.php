@@ -1,11 +1,5 @@
 <?php 
-session_start();
-
-//echo $_SESSION['autenticado'];
-if(!isset($_SESSION['autenticado'])  || $_SESSION ['Autenticado'] != 'SIM'){
-  header('Location: index.php?login=erro2');
-
-}
+require_once("login.php");
 ?>
 
 
@@ -16,16 +10,17 @@ if(!isset($_SESSION['autenticado'])  || $_SESSION ['Autenticado'] != 'SIM'){
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-    </style>
   </head>
 
   <body>
 
     <nav class="navbar navbar-dark bg-dark">
+      
       <a class="navbar-brand" href="#">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
+      <button onclick="location.href='logoff.php'" class="botao-sair" type="button">Sair</button>
     </nav>
 
     <div class="container">    
@@ -64,7 +59,7 @@ if(!isset($_SESSION['autenticado'])  || $_SESSION ['Autenticado'] != 'SIM'){
 
                     <div class="row mt-5">
                       <div class="col-6">
-                        <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+                        <a class="btn btn-lg btn-warning btn-block" href="painel.php">Voltar</a>
                       </div>
 
                       <div class="col-6">

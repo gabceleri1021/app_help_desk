@@ -21,6 +21,7 @@ session_start();
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
+      
     </nav>
 
     <div class="container">    

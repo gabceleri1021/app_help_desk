@@ -1,23 +1,45 @@
 .card-login {
-    padding: 30px 0 0 0;
-    width: 350px;
-    margin: 0 auto;
-   }
+  padding: 30px 0 0 0;
+  width: 350px;
+  margin: 0 auto;
+}
 
 .card-home {
-     padding: 30px 0 0 0;
-     width: 100%;
-     margin: 0 auto;
-   }
+  padding: 30px 0 0 0;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .card-abrir-chamado {
-     padding: 30px 0 0 0;
-     width: 100%;
-     margin: 0 auto;
-   }
+  padding: 30px 0 0 0;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .card-consultar-chamado {
-     padding: 30px 0 0 0;
-     width: 100%;
-     margin: 0 auto;
-   }
+  padding: 30px 0 0 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.botao-sair {
+  background-color: red;
+  /* Cor de fundo vermelha */
+  color: white;
+  /* Cor do texto branca */
+  border: none;
+  /* Sem borda */
+  padding: 10px 20px;
+  /* Espaçamento interno */
+  font-size: 16px;
+  /* Tamanho da fonte */
+  cursor: pointer;
+  /* Muda o cursor ao passar o mouse */
+  border-radius: 5px;
+  /* Bordas arredondadas */
+}
+
+.botao-sair:hover {
+  background-color: darkred;
+  /* Cor mais escura ao passar o mouse */
+}
