@@ -1,8 +1,3 @@
-<?php 
-require_once("login.php");
-?>
-
-
 <html>
   <head>
     <meta charset="utf-8" />
@@ -10,17 +5,16 @@ require_once("login.php");
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
+    </style>
   </head>
 
   <body>
 
     <nav class="navbar navbar-dark bg-dark">
-      
       <a class="navbar-brand" href="#">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
-      <button onclick="location.href='logoff.php'" class="botao-sair" type="button">Sair</button>
     </nav>
 
     <div class="container">    
@@ -59,7 +53,7 @@ require_once("login.php");
 
                     <div class="row mt-5">
                       <div class="col-6">
-                        <a class="btn btn-lg btn-warning btn-block" href="painel.php">Voltar</a>
+                        <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
                       </div>
 
                       <div class="col-6">
