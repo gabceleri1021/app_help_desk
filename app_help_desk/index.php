@@ -1,44 +1,48 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>App Help Desk</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Música grátis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
 
 
-    </style>
-  </head>
-
-  <body>
-
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
-      </a>
-    </nav>
-
-    <div class="container">    
-      <div class="row">
-
-        <div class="card-login">
-          <div class="card">
-            <div class="card-header">
-              Login
-            </div>
-            <div class="card-body">
-              <form action="valida_login.php" method="post">
-                <div class="form-group">
-                  <input type="email" name="email" class="form-control" placeholder="E-mail" required>
-                </div>
-                <div class="form-group">
-                  <input type="password" name ="senha" class="form-control" placeholder="Senha" required>
-                </div>
-                <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
-              </form>
-            </div>
-          </div>
+    <center>
+        <div id="Header">
+            <h1>Bem vindo ao começo do sucesso!</h1>
+            <button class="btn-login" onclick="location.href='entrar.php'">Login</button>
+            <br>
+            <h2>Aqui disponibilizamos cursos gratuitos de qualquer instrumento musical!</h2>
+            <br>
         </div>
+    </center>
+    <br><br><br>
+    <img id="img" src="cultura-erudita (1).webp" alt="" height="600" width="600">
+    <br><br><br>
+    <div id="fale_conosco">
+        <form action="">
+            <h2 id="mensagem1">Primeiro Passo, Insira o que se pede!</h2>
     </div>
-  </body>
+    <br>
+    <h3 class="nome_campo">Nome:</h3>
+    <input id="campo" type="nome" placeholder="Digite seu nome aqui">
+    <br><br>
+    <h3 class="nome_campo">Email:</h3>
+    <input id="campo" type="email" placeholder="Digite seu email aqui">
+    <br>
+    <input id="botao" type="submit" value="Enviar!">
+    </form>
+
+    </div>
+    <div id="Footer"></div>
+    <br>
+
+
+
+</body>
+
 </html>
