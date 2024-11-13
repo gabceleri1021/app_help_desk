@@ -1,0 +1,23 @@
+<?php
+require_once("classe_pessoa.php");//Linkei arquivo x com esse arquivo
+
+$y = new Person (); //Nova pessoa
+
+$y->nome = "valter"; //Novo nome 
+$y->idade = 60;//Nova idade
+
+echo "$y->nome nome";
+echo "<br>";
+echo "<hr>";
+echo "$y->idade idade";
+echo $y-> apresentar();
+echo "<br>";
+echo "<hr>";
+echo $y-> caminhar();
+echo "<br>";
+echo "<hr>";
+echo $y-> falar();
+echo "<br>";
+
+
+?>

@@ -1,0 +1,23 @@
+<?php
+require_once("classe_professor.php"); //Linkei arquivo x com esse arquivo
+
+$y = new Teacher();//Nova pessoa
+
+$y->nome = "valter";//Novo nome 
+$y->disciplina = "Progrmador"; //nova disciplina
+
+echo "$y->nome Professor";
+echo "<br>";
+echo "<hr>";
+echo "$y->disciplina Disciplina";
+echo $y-> ensinar();
+echo "<br>";
+echo "<hr>";
+echo $y-> corrigirProva();
+echo "<br>";
+echo "<hr>";
+echo $y-> prepararAula();
+echo "<br>";
+
+
+?>

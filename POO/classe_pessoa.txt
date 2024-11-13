@@ -1,0 +1,33 @@
+<?php
+class Person //Classe pessoa
+{
+    public $nome = null;
+    public $idade = null; //Valores nulos
+    protected $cpf = null;
+    protected $endereco = null;
+    
+    public function apresentar() {
+       echo "$this->nome está se apresentando, ele disse que tem $this->idade anos.";
+    }
+
+    public function caminhar() {
+        echo "$this->nome está caminhando, no seu endereco $this->endereco.";
+
+    }
+
+    public function falar() {
+        echo "$this->nome está falando (shiu)";
+    }
+
+    private function comer() {
+       echo "$this->nome está comendo no refeitório de seu trabalho";
+    }
+
+    private function durmir() {
+        echo "$this->nome está dormindo nesse momento";
+    }
+
+}
+
+
+?>

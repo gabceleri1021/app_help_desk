@@ -1,0 +1,31 @@
+<?php
+class Coordinator //classe coordenador
+{
+    public $nome = null;
+    public $departamento = null; //Valores nulos
+    private $cpf = null;
+    protected $salario = null;
+    
+    //funções
+    public function coordenarTurmas() { 
+       echo "$this->nome está coordenando seus alunos por conta de seu $this->departamento.";
+    }
+
+    public function planejarAulas() {
+        echo "$this->nome está planejando suas aulas.";
+
+    }
+
+    public function auxiliarProfessores() {
+        echo "$this->nome está auxiliando os professores no momento.";
+    }
+
+    private function definirHorarios() {
+       echo "$this->nome está definindo os horários de aula por conta do seu departamento .";
+    }
+
+    private function organizarReunioes() {
+        echo "$this->nome está organizando reuniões de pais com seus alunos.";
+    }
+
+}

@@ -1,0 +1,23 @@
+<?php
+require_once("classe_coordenador.php"); //Linkei arquivo x com esse arquivo
+
+$y = new Coordinator (); //Novo coordenador
+
+$y->nome = "valter";
+$y->departamento = "Ensino Médio"; // Novos valores
+
+echo "$y->nome nome"; //Nome novo
+echo "<br>";
+echo "<hr>";
+echo "$y->departamento departamento"; //Departamento novo
+echo $y-> coordenarTurmas(); //Açoes
+echo "<br>";
+echo "<hr>";
+echo $y-> planejarAulas();//Açoes
+echo "<br>";
+echo "<hr>";
+echo $y-> auxiliarProfessores();//Açoes
+echo "<br>";
+
+
+?>
